@@ -1,34 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balneario Barra do Sul</title>
-</head>
-<body>
-    <header>
-        <img src="" alt="pronto">
-    </header>
-    <section>
-        <nav>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>Hotel Bandeirantes - Cardápio</title>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="#">Hotel Bandeirantes - Cardápio</a></div>
+                <ul class="links">
+                    <li><a href="hero">Home</a></li>
+                    <li><a href="entrada">Entradas</a></li>
+                    <li><a href="carnes">Carnes</a></li>
+                    <li><a href="mar">Frutos do Mar</a></li>
+                    <li><a href="massas">Massas</a></li>
+                    <li><a href="infantil">Pratos Infantis</a></li>
+                    <li><a href="executivo">Executivo</a></li>
+                    <li><a href="drinks">Drinks</a></li>
+                    <li><a href="bebidas">Bebidas</a></li>
+                </ul>
+                <a href="#" class="action_btn">Get Started</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="dropdown_menu open">
+                <li><a href="entrada">Entradas</a></li>
+                <li><a href="carnes">Carnes</a></li>
+                <li><a href="mar">Frutos do Mar</a></li>
+                <li><a href="massas">Massas</a></li>
+                <li><a href="infantil">Pratos Infantis</a></li>
+                <li><a href="executivo">Executivo</a></li>
+                <li><a href="drinks">Drinks</a></li>
+                <li><a href="bebidas">Bebidas</a></li>
+                <li><a href="#" class="action_btn">Get Started</a></li>
+            </div>
+        
+        </header>
 
-        </nav>
-        <article>
-            <h1>Já pensou em conhecer Santa Catarina?</h1>
-            <h2>Uma maravilha do sul do Brasil</h2>
-            Santa Catarina esta recheada de belas praias, paisagens exuberantes e muito verde a perder de vista.
-            Balneario Barra do Sul é um desses maravilhosos destinos e o Hotel Bandeirates lhe proporciona a melhor vista que você poderá ter desse pedacinho de paraíso.
-        </article>
+        <main>
+            <section id="hero">
+                <h1>Sejam Bem Vindos</h1>
+                <p>Cardápio online para a facilidade e praticidade no atendimento do restaurante do Hotel Bandeirantes da Barra</p>
+            </section>
+        </main>
 
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
 
-    </section>
-    <footer>
-        &copy; Prontocloud. Todos os direitos reservados.
-        <small>Desenvolvido por: Nick'</small>
-    </footer>
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
 
+                toggleBtnIcon.classList = isOpen
+                    ? 'fa-solid fa-xmark'
+                    : 'fa-solid fa-bars'
+            }
+        </script>
 
-    
-</body>
+        
+    </body>
 </html>

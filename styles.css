@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+
 body{
     height: 100vh;
     background-color: #000;
@@ -29,7 +36,7 @@ header{
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between
 }
 .navbar .logo a {
     font-size: 1.5rem;
@@ -57,17 +64,17 @@ header{
     cursor: pointer;
     transition: scale 0.2 ease;
 }
-.action_btn:hover{
+.action_btn:hover {
     scale: 1.05;
     color: blue;
 }
-.action_btn:active{
+.action_btn:active {
     scale: 0.95;
 }
 /*DROPDOWN MENU*/
 .dropdown_menu{
     display: none;
-    position: absolute;
+    position: fixed;
     right: 2rem;
     top: 60px;
     height: 0;
@@ -106,6 +113,15 @@ section#hero {
 #hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+}
+/*
+.header {
+    z-index: 9999;
+    position: fixed;
+}
+*/
+.content {
+    color: #fff;
 }
 
 @media(max-width: 992px){

@@ -12,6 +12,7 @@
     font-family: 'Roboto', sans-serif;
     transition: 0.5s;
     text-transform: capitalize;
+
 }
 html{
     font-size: 65%;
@@ -50,6 +51,7 @@ html{
     padding: 0.5rem;
     font-size: 1.5rem;
 }
+
 .navbar a:hover{
     color: var(--btn-color);
 }
@@ -115,6 +117,7 @@ html{
     font-size: 45px;
     color: #ffd500;
     text-align: justify;
+    filter: drop-shadow(0 0 0.75rem #004995);
 }
 .home-text-content p{
     color: white;
@@ -274,9 +277,16 @@ html{
 }
 .our-menu-food h1{
     color: var(--btn-color);
-    font-size: 45px;
+    font-size: 55px;
     text-align: center;
     padding: 0.5rem 0;
+    filter: drop-shadow(0 0 0.75rem #004995);
+}
+.our-menu-food h2{
+    color: var(--btn-color);
+    font-size: 35px;
+    text-align: center;
+    padding: 3rem 0;
 }
 .main-menu-food{
     margin-top: 1rem;
@@ -290,6 +300,10 @@ html{
 .menu-food-content{
     width: 100%;
 }
+.bar-menu-food{
+    width: 2px;
+    background: white;
+}
 .menu-food-content img{
     width: 100%;
 }
@@ -298,8 +312,9 @@ html{
 }
 .menu-food-text h2{
     color: var(--btn-color);
-    font-size: 30px;
+    font-size: 25px;
     padding-bottom: 2px;
+    text-align: left;
 }
 .menu-food-text p{
     color: white;

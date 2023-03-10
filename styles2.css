@@ -322,13 +322,7 @@ html{
 }
 
 
-
-
-
-@media (max-width:767px) {
-    .header{
-        padding: 2rem;
-    }
+@media (max-width:1140px) {
     .icons div{
         display: initial;
     }
@@ -347,6 +341,17 @@ html{
         margin: 1rem;
         padding: 1rem;
     }
+}
+
+
+@media (max-width:767px) {
+    .header{
+        padding: 2rem;
+    }
+    .logo h1{
+       font-size: 0%;
+    }
+   
 
     /* home css desing */
 

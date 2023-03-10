@@ -358,7 +358,7 @@ html{
     .navbar{
         position: absolute;
         width: 50%;
-        height: 50vh;
+        height: auto;
         right: 0;
         top: 100%;
         
@@ -371,6 +371,7 @@ html{
         padding: 1rem;
         color: white; 
         border-radius: 2%;
+        background: var(--about-sec);
         border: 1px solid var(--btn-color);
         border-color: #ffd500;
         

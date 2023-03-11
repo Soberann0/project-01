@@ -294,11 +294,17 @@ html{
     padding-top: 40px;
 }
 .our-menu-food h2{
-    color: rgb( 0, 73, 149);
+    color: #2ea9d9;
     font-size: 35px;
     text-align: center;
     padding: 3rem 0;
-    margin-bottom: 50px;
+    
+}
+.menu-frame{
+    text-align: center;
+    flex: 1 1 0.45rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .main-menu-food{
     margin-top: 1rem;
@@ -329,6 +335,11 @@ html{
     padding-bottom: 2px;
     text-align: left;
 }
+.menu-food-text h2 span{
+    background: #004995;
+    border-radius: 50%;
+    padding: 1%;
+}
 .menu-food-text h4{
     color: white;
     font-size: 14px;
@@ -339,6 +350,7 @@ html{
     color: white;
     font-size: 12px;
     margin: 1rem 0;
+    padding-left: 70px;
 }
 .menu-food-text p span{
     color: #ffd500;
@@ -445,6 +457,12 @@ html{
     .main-menu-food{
         display: block;
     }
+    .menu-food-text p{
+        padding-left: 10px;
+    }
+    .menu-food-text h2{
+        padding-bottom: 20px;
+    }
     .bar-menu-food{
         width: 50%;
         height: 1px;
@@ -456,6 +474,11 @@ html{
         height: 1px;
         background: white;
         margin: 25px 25% 25px 25%;
+    }
+    .menu-frame img{
+        width: 250px;
+        height: 124px;
+        margin-top: 30px;
     }
 
 

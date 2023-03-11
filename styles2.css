@@ -144,6 +144,12 @@ html{
     background: var(--btn-color);
     border: 1px solid white;
 }
+.mid-bar{
+    height: 1px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
 .about{
     padding: 1rem 7%;
     background: var(--about-sec);
@@ -285,6 +291,7 @@ html{
     text-align: center;
     padding: 0.5rem 0;
     filter: drop-shadow(0 0 0.75rem #004995);
+    padding-top: 40px;
 }
 .our-menu-food h2{
     color: rgb( 0, 73, 149);
@@ -292,7 +299,6 @@ html{
     text-align: center;
     padding: 3rem 0;
     margin-bottom: 50px;
-    text
 }
 .main-menu-food{
     margin-top: 1rem;
@@ -357,11 +363,12 @@ html{
     }
     .navbar{
         position: absolute;
-        width: 50%;
+        display: -webkit-inline-box;
+        width: 100%;
+        overflow: overlay;
         height: auto;
         right: 0;
-        top: 100%;
-        
+        top: 100%;        
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
     .navbar a{

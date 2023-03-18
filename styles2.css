@@ -17,6 +17,13 @@
 html{
     font-size: 65%;
     scroll-behavior: smooth;
+    justify-content: center;
+    background: var(--about-sec);
+}
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+
 }
 .header{
     padding: 1rem 7%;
@@ -27,7 +34,7 @@ html{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background: #1d1d23;
+    background: rgba(0, 0, 0, 0);
     filter: drop-shadow(2px 3px 5px #000);
 }
 .logo{
@@ -45,21 +52,41 @@ html{
     color: #004995;
     text-align: center;
 }
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: center;     
+   /* clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);*/
+}
+.navbar a{
+    display: block;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    color: white; 
+    border-radius: 7px;
+    background: var(--about-sec);
+    border: 1px solid var(--btn-color);
+    border-color: #ffd500;
+    font-size: 20px;
+    
+}
+/*
 .navbar a{
     color: white;
     margin: 0.5rem;
     padding: 0.5rem;
     font-size: 1.5rem;
 }
-
+*/
 .navbar a:hover{
     color: var(--btn-color);
 }
-.icons div{
+/* .icons div{
     color: white;
     font-size: 1.5rem;
     margin-right: 10px;
-    display: none;
+    display: initial;
 }
 .icons div #menu-bar:hover{
     cursor: pointer;
@@ -72,7 +99,7 @@ html{
     font-size: 18px;
     transition: 0.5s;
     display: inline-block;
-}
+} */
 .contact-btn:hover{
     transform: scale(1.1);
     background: var(--btn-color);
@@ -282,7 +309,7 @@ html{
 }
 .our-menu-food{
     background-color: var(--about-sec);
-    padding: 1rem 7%;
+    padding: 1rem 0;
     border-color: var(--about-sec);
 }
 .our-menu-food h1{
@@ -303,8 +330,8 @@ html{
 .menu-frame{
     text-align: center;
     flex: 1 1 0.45rem;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 0px;
+    margin-bottom: 50px;
 }
 .main-menu-food{
     margin-top: 1rem;
@@ -318,16 +345,19 @@ html{
 
 .menu-food-content{
     width: 100%;
+    display: block;
 }
 .bar-menu-food{
-    width: 2px;
+    width: 1px;
     background: white;
+    box-shadow: 0 0 1px black;
 }
 .menu-food-content img{
     width: 100%;
+    box-shadow: 0px 0px 5px black;
 }
 .menu-food-text{
-    padding: 2rem 2rem;
+    padding: 0 2rem;
 }
 .menu-food-text h2{
     color: var(--btn-color);
@@ -348,7 +378,7 @@ html{
 }
 .menu-food-text p{
     color: white;
-    font-size: 12px;
+    font-size: 17px;
     margin: 1rem 0;
     padding-left: 70px;
 }
@@ -370,9 +400,9 @@ html{
 
 
 @media (max-width:1170px) {
-    .icons div{
+   /* .icons div{
         display: initial;
-    }
+    } 
     .navbar{
         position: absolute;
         display: -webkit-inline-box;
@@ -394,7 +424,7 @@ html{
         border: 1px solid var(--btn-color);
         border-color: #ffd500;
         
-    }
+    } */
     .about-content .about-inner-content img{
         display: none;
     }
@@ -416,6 +446,17 @@ html{
 
 
 @media (max-width:768px) {
+    .navbar{
+        position: relative;
+        display: -webkit-inline-box;
+        width: 100%;
+        overflow: overlay;
+             
+       /* clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);*/
+    }
+    .navbar::-webkit-scrollbar{
+        filter: opacity(100%);
+    }
     .header{
         padding: 2rem;
     }

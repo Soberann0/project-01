@@ -19,6 +19,7 @@ html{
     scroll-behavior: smooth;
     justify-content: center;
     background: var(--about-sec);
+    min-width: 320px;
 }
 body{
     max-width: 1200px;
@@ -375,6 +376,7 @@ body{
     font-size: 14px;
     font-weight: bold;
     margin: 1rem 0;
+    padding-left: 10px;
 }
 .menu-food-text p{
     color: white;

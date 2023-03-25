@@ -134,11 +134,17 @@ body{
 .home-inner-content{
     flex: 1 1 45rem;
 }
+.home-image{
+    display: flex;
+    align-content: center;
+}
 .home-image img{
-    width: 100%;
+    margin: 0 auto;
+    width: 40%;
     filter: drop-shadow(2px 3px 5px #000);
 }
 .home-text-content{
+    text-align: center;
     padding: 0 10rem;
     align-items: center;
 }
@@ -334,6 +340,12 @@ body{
     margin-top: 0px;
     margin-bottom: 50px;
 }
+
+.menu-frame img{
+   
+    margin-top: 20px;
+    
+}
 .main-menu-food{
     margin-top: 1rem;
     display: flex;
@@ -439,7 +451,7 @@ body{
         text-align: center; 
     }
     .home-text-content a{
-        width: 26%;
+        
         text-align: center;
         align-items: center;
         margin: 0 37% 0 37% ;
@@ -477,6 +489,11 @@ body{
     }
     .home{
         padding-top: 100px;
+    }
+    .home-image img{
+
+        width: 100%;
+        filter: drop-shadow(2px 3px 5px #000);
     }
     .about-content .about-inner-content img{
         width: 100%;
